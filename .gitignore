@@ -1,0 +1,33 @@
+# .NET .gitignore example
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.exe
+*.dll
+*.pdb
+*.app
+*.appx
+*.log
+*.vsix
+*.nupkg
+
+# User-specific files
+.vscode/
+.vs/
+*.user
+*.suo
+*.psess
+
+# Visual Studio Code specific files
+.vscode/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Logs
+*.log
