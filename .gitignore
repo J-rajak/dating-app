@@ -31,3 +31,5 @@ packages/
 
 # Logs
 *.log
+appsettings*.json
+
