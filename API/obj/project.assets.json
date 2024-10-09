@@ -2897,11 +2897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\PREDATOR\\OneDrive\\Pictures\\Documents\\dotnet\\dating_app\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\PREDATOR\\OneDrive\\Pictures\\Documents\\dotnet\\dating_app\\API\\API.csproj",
+      "projectPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
       "packagesPath": "C:\\Users\\PREDATOR\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\PREDATOR\\OneDrive\\Pictures\\Documents\\dotnet\\dating_app\\API\\obj\\",
+      "outputPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PREDATOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
