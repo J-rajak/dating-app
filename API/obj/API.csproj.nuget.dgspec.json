@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj": {}
+    "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj": {
+    "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
+        "projectPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
         "packagesPath": "C:\\Users\\PREDATOR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\obj\\",
+        "outputPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PREDATOR\\AppData\\Roaming\\NuGet\\NuGet.Config",

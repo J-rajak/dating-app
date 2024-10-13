@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ypTaAWwn+zw=",
+  "dgSpecHash": "anYI9FSdCtY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PREDATOR\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PREDATOR\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.8\\microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
