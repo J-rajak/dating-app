@@ -35,9 +35,9 @@ public class AppUser
 
     public List<Photo> Photos {get; set; } = []; //navigation property
 
-    public int GetAge()
-    {
-        return DateOfBirth.CalculateAge();
-    }
+    // public int GetAge()
+    // {
+    //     return DateOfBirth.CalculateAge();
+    // }
 
 }
