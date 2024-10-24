@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj": {}
+    "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj": {
+    "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
+        "projectPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
         "packagesPath": "C:\\Users\\PREDATOR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\obj\\",
+        "outputPath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PREDATOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
