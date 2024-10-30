@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import {
   AbstractControl,
+  FormBuilder,
   FormControl,
   FormGroup,
   FormsModule,
@@ -29,6 +30,8 @@ import { TextInputComponent } from '../_forms/text-input/text-input.component';
 })
 export class RegisterComponent implements OnInit {
   private accountService = inject(AccountService);
+  private fb = inject(FormBuilder);
+
   private toastr = inject(ToastrService);
   cancelRegister = output<boolean>(); // child to parent output
   model: any = {};
@@ -39,17 +42,16 @@ export class RegisterComponent implements OnInit {
   }
 
   initializeForm() {
-    this.registerForm = new FormGroup({
-      username: new FormControl('', Validators.required),
-      password: new FormControl('', [
-        Validators.required,
-        Validators.minLength(4),
-        Validators.maxLength(8),
-      ]),
-      confirmPassword: new FormControl('', [
-        Validators.required,
-        this.matchValues('password'),
-      ]),
+    this.registerForm = this.fb.group({
+      username: ['', Validators.required],
+      password: [
+        '',
+        [Validators.required, Validators.minLength(4), Validators.maxLength(8)],
+      ],
+      confirmPassword: [
+        '',
+        [Validators.required, this.matchValues('password')],
+      ],
     });
 
     this.registerForm.controls['password'].valueChanges.subscribe({
