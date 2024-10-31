@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IvGWrYz8ldY=",
+  "dgSpecHash": "wmczeCEMBMk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jeron\\Saved Games\\dating_app\\api\\API.csproj",
+  "projectFilePath": "C:\\Users\\jeron\\Saved Games\\dating_app\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PREDATOR\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\PREDATOR\\.nuget\\packages\\cloudinarydotnet\\1.26.2\\cloudinarydotnet.1.26.2.nupkg.sha512",
