@@ -21,25 +21,35 @@ import { ToastrService } from 'ngx-toastr';
 import { JsonPipe, NgIf } from '@angular/common';
 import { TextInputComponent } from '../_forms/text-input/text-input.component';
 import { DatePickerComponent } from '../_forms/date-picker/date-picker.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [ReactiveFormsModule, JsonPipe, NgIf, TextInputComponent, DatePickerComponent],
+  imports: [
+    ReactiveFormsModule,
+    JsonPipe,
+    NgIf,
+    TextInputComponent,
+    DatePickerComponent,
+  ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.css',
 })
 export class RegisterComponent implements OnInit {
   private accountService = inject(AccountService);
   private fb = inject(FormBuilder);
-
+  private router = inject(Router);
   private toastr = inject(ToastrService);
   cancelRegister = output<boolean>(); // child to parent output
   model: any = {};
   registerForm: FormGroup = new FormGroup({});
+  maxDate = new Date();
+  validationErrors: string[] | undefined;
 
   ngOnInit(): void {
     this.initializeForm();
+    this.maxDate.setFullYear(this.maxDate.getFullYear() - 18);
   }
 
   initializeForm() {
@@ -75,13 +85,12 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    // this.accountService.register(this.model).subscribe({
-    //   next: (response) => {
-    //     console.log(response);
-    //     this.cancel();
-    //   },
-    //   error: (error) => this.toastr.error(error.error),
-    // });
+    this.accountService.register(this.model).subscribe({
+      next: (_) => {
+        this.router.navigateByUrl('/members');
+      },
+      error: (error) => this.toastr.error(error.error),
+    });
   }
 
   cancel() {
