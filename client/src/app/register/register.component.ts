@@ -17,7 +17,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { AccountService } from '../_services/account.service';
-import { ToastrService } from 'ngx-toastr';
 import { JsonPipe, NgIf } from '@angular/common';
 import { TextInputComponent } from '../_forms/text-input/text-input.component';
 import { DatePickerComponent } from '../_forms/date-picker/date-picker.component';
@@ -40,9 +39,7 @@ export class RegisterComponent implements OnInit {
   private accountService = inject(AccountService);
   private fb = inject(FormBuilder);
   private router = inject(Router);
-  private toastr = inject(ToastrService);
   cancelRegister = output<boolean>(); // child to parent output
-  model: any = {};
   registerForm: FormGroup = new FormGroup({});
   maxDate = new Date();
   validationErrors: string[] | undefined;
@@ -85,15 +82,23 @@ export class RegisterComponent implements OnInit {
   }
 
   register() {
-    this.accountService.register(this.model).subscribe({
+    const dob = this.getDateOnly(this.registerForm.get('dateOfBirth')?.value);
+    this.registerForm.patchValue({ dateOfBirth: dob });
+    this.accountService.register(this.registerForm.value).subscribe({
       next: (_) => {
         this.router.navigateByUrl('/members');
       },
-      error: (error) => this.toastr.error(error.error),
+      error: (error) => (this.validationErrors = error),
     });
   }
 
   cancel() {
     this.cancelRegister.emit(false);
+  }
+
+  private getDateOnly(dob: string | undefined) {
+    if (!dob) return;
+
+    return new Date(dob).toISOString().slice(0, 10);
   }
 }
