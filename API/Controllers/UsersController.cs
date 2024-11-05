@@ -62,6 +62,7 @@ public class UsersController(IUserRepository userRepository, IMapper mapper, IPh
 
         if (result.Error != null) return BadRequest(result.Error.Message);
 
+
         var photo = new Photo
         {
             Url = result.SecureUrl.AbsoluteUri,
