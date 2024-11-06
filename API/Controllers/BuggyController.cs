@@ -28,6 +28,8 @@ public class BuggyController(DataContext context) : BaseApiController
     }
 
 
+
+
     [HttpGet("server-error")]
 
     public ActionResult<AppUser> GetServerError()
