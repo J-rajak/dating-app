@@ -17,12 +17,15 @@ export class MembersService {
   paginatedResult = signal<PaginatedResult<Member[]> | null>(null);
 
   getMembers(userParams: UserParams) {
-    let params = this.setPaginationHeaders(userParams.pageNumber, userParams.pageSize);
+    let params = this.setPaginationHeaders(
+      userParams.pageNumber,
+      userParams.pageSize
+    );
 
     params = params.append('minAge', userParams.minAge);
     params = params.append('maxAge', userParams.maxAge);
     params = params.append('gender', userParams.gender);
-
+    params = params.append('orderBy', userParams.orderBy);
 
     return this.http
       .get<Member[]>(this.baseUrl + 'users', { observe: 'response', params })
@@ -36,8 +39,7 @@ export class MembersService {
       });
   }
 
-  private setPaginationHeaders(pageNumber : number, pageSize : number) {
-
+  private setPaginationHeaders(pageNumber: number, pageSize: number) {
     let params = new HttpParams();
 
     if (pageNumber && pageSize) {
@@ -46,7 +48,6 @@ export class MembersService {
     }
 
     return params;
-
   }
 
   getMember(username: string) {
