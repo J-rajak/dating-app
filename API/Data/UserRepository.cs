@@ -50,6 +50,8 @@ public class UserRepository(DataContext context, IMapper mapper) : IUserReposito
     public async Task<AppUser?> GetUserByIdAsync(int id)
     {
         return await context.Users.FindAsync(id);
+
+        
     }
 
     public async Task<AppUser?> GetUserByUsernameAsync(string username)
