@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Data;
 
 public class LikesRepository(DataContext context, IMapper mapper) : ILikesRepository
+
 {
     public void AddLike(UserLike like)
     {
