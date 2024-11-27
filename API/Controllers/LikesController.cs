@@ -47,6 +47,7 @@ public class LikesController(ILikesRepository likesRepository) : BaseApiControll
         return Ok(await likesRepository.GetCurrentUserLikeIds(User.GetUserId()));
     }
 
+
     [HttpGet]
     public async Task<ActionResult<IEnumerable<MemberDto>>> GetUserLikes(string predicate)
     {
