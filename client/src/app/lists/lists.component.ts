@@ -14,6 +14,7 @@ import { MemberCardComponent } from "../members/member-card/member-card.componen
 })
 export class ListsComponent implements OnInit {
   private likesService = inject(LikesService);
+  
   members: Member[] = [];
   predicate = 'liked';
 
