@@ -49,6 +49,8 @@ export class MembersService {
       });
   }
 
+  
+
   private setPaginatedResponse(response: HttpResponse<Member[]>) {
     this.paginatedResult.set({
       items: response.body as Member[],
