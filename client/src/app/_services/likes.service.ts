@@ -15,6 +15,8 @@ export class LikesService {
     return this.http.post(`${this.baseUrl}likes/${targetId}`, {});
   }
 
+  
+
   getLikes(predicate: string) {
     return this.http.get<Member[]>(`${this.baseUrl}likes?predicate=${predicate}`);
   }
