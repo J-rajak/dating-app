@@ -41,6 +41,7 @@ export class AccountService {
     this.likesService.getLikesIds();
   }
 
+  
   logout() {
     localStorage.removeItem('user');
     this.currentUser.set(null);
