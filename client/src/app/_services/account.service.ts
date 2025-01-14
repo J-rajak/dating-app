@@ -40,7 +40,6 @@ export class AccountService {
     this.currentUser.set(user);
     this.likesService.getLikesIds();
   }
-
   
   logout() {
     localStorage.removeItem('user');
