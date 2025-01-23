@@ -16,7 +16,6 @@ export class BusyService {
       color: '#333333',
     });
   }
-
   
   idle() {
     this.busyRequestCount--;
