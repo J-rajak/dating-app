@@ -22,7 +22,6 @@ export class LikesService {
     let params = setPaginationHeaders(pageNumber, pageSize);
 
     params = params.append('predicate', predicate);
-
     
     return this.http
       .get<Member[]>(`${this.baseUrl}likes`, {
