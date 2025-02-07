@@ -24,7 +24,6 @@ export class MemberCardComponent {
     this.likeService.likeIds().includes(this.member().id)
   );
 
-  
   toggleLike() {
     this.likeService.toggleLike(this.member().id).subscribe({
       next: () => {
