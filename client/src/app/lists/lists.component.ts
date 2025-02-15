@@ -45,6 +45,7 @@ export class ListsComponent implements OnInit, OnDestroy{
     }
   }
 
+  
   ngOnDestroy(): void {
       this.likesService.paginatedResult.set(null);
   }
