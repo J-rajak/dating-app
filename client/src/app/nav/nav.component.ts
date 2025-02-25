@@ -17,6 +17,7 @@ export class NavComponent {
   private router = inject(Router);
   private toastr = inject(ToastrService);
 
+  
   model: any = {};
 
   login() {
