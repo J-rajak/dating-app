@@ -54,7 +54,6 @@ export class MembersService {
         },
       });
   }
-
   
   getMember(username: string) {
     const member: Member = [...this.memberCache.values()]
