@@ -17,7 +17,6 @@ export class LikesService {
   toggleLike(targetId: number) {
     return this.http.post(`${this.baseUrl}likes/${targetId}`, {});
   }
-
   
   getLikes(predicate: string, pageNumber: number, pageSize: number) {
     let params = setPaginationHeaders(pageNumber, pageSize);
