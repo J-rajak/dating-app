@@ -55,6 +55,7 @@ export class MembersService {
       });
   }
   
+  
   getMember(username: string) {
     const member: Member = [...this.memberCache.values()]
       .reduce((arr, elem) => arr.concat(elem.body), [])
