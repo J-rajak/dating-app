@@ -10,7 +10,6 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { loadingInterceptor } from './_interceptors/loading.interceptor';
 import { TimeagoModule } from 'ngx-timeago';
 
-
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
