@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
+
 public class LikesController(ILikesRepository likesRepository) : BaseApiController
 {
     [HttpPost("{targetUserId:int}")]
