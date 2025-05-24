@@ -9,7 +9,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace API.Controllers;
 
 public class AccountController(DataContext context, ITokenService tokenService, IMapper mapper) : BaseApiController
