@@ -21,6 +21,7 @@ import {
   templateUrl: './date-picker.component.html',
   styleUrl: './date-picker.component.css',
 })
+
 export class DatePickerComponent implements ControlValueAccessor {
   label = input<string>('');
   maxDate = input<Date>();
