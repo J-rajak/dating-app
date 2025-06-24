@@ -25,6 +25,7 @@ export class MemberListComponent implements OnInit {
     if (!this.memberService.paginatedResult()) this.loadMembers();
   }
 
+  
   loadMembers() {
     this.memberService.getMembers();
   }
