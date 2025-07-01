@@ -25,6 +25,7 @@ export class LikesService {
     
     params = params.append('predicate', predicate);
     
+    
     return this.http
       .get<Member[]>(`${this.baseUrl}likes`, {
         observe: 'response',
