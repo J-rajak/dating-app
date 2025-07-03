@@ -36,7 +36,6 @@ export class LikesService {
           setPaginatedResponse(response, this.paginatedResult),
       });
   }
-
   getLikesIds() {
     return this.http.get<number[]>(`${this.baseUrl}likes/list`).subscribe({
       next: (ids) => this.likeIds.set(ids),
