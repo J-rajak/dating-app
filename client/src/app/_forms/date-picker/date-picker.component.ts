@@ -26,6 +26,7 @@ export class DatePickerComponent implements ControlValueAccessor {
   maxDate = input<Date>();
   bsConfig?: Partial<BsDatepickerConfig>;
 
+  
   constructor(@Self() public ngControl: NgControl) {
     this.ngControl.valueAccessor = this;
     this.bsConfig = {
