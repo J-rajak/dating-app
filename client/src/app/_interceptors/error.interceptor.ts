@@ -8,7 +8,6 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
   const router = inject(Router);
   const toastr = inject(ToastrService);
 
-  
   return next(req).pipe(
     catchError((error) => {
       if (error) {
